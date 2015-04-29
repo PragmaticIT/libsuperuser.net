@@ -70,7 +70,7 @@ namespace libsuperuser_net
 			try {
 				string line;
 				while ((line = reader.ReadLine()) != null) {
-					Debug.logOutput(string.Format("[%s] %s", shell, line));
+					Debug.logOutput(string.Format("[{0}] {1}", shell, line));
 					if (writer != null) writer.Add(line);
 					if (listener != null) listener.OnLine(line);
 				}
